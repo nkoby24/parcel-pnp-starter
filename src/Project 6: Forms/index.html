@@ -4,65 +4,71 @@
         <title>Form Basics</title>
     </head>
     <body>
-        <form action="http://example.com/join.php">
+        <h1>Welcome to Computer Science @MHS</h1>
+        <p>Please complete the following form</p>
+        <hr />
+        <h2>Demographic Information</h2>
+        <form action="mailto:nck2180@gmail.com" method="POST">
+            <p>
+                First Name:
+                <input type="text" name="firstName" size="15" maxlength="30" required="required" />
+
+                Last Name:
+                <input type="text" name="lastName" size="15" maxlength="30" required="required" />
+            </p>
+
             <p>
                 Username:
-                <input type="text" name="username" size="15" maxlength="30" required="required"/>
-            </p>
-            <p>
+                <input type="text" name="username" size="15" maxlength="30" required="required" />
+
                 Password:
-                <input type="password" name="password" size="15" maxlength="16"required="required"/>
-            </p>
-            <p>How can we improve our services?</p>
-            <textarea name="comments" size="15" cols="50" rows="4" placeholder="Enter your comments..."></textarea>
-            <p>
-                Your favorite music genre:
-                <br />
-                <input type="radio" name="genre" value="rock" />
-                Rock
-                <input type="radio" name="genre" value="pop" />
-                Pop
-                <input type="radio" name="genre" value="jazz" />
-                Jazz
+                <input type="password" name="password" size="15" maxlength="16" required="required" />
             </p>
             <p>
-                Music servies you use:
-                <br />
-                Please chose the music service you use.
-                <br />
-                <input type="checkbox" name="service" value="iTunes" />
-                iTunes
-                <input type="checkbox" name="service" value="Last.fm" />
-                Last.fm
-                <input type="checkbox" name="service" value="Spotify" />
-                Spotify
+                Date of Birth
+                <input type="date" name="depart" />
             </p>
+            <hr />
+            <h2>Class Information</h2>
             <p>
-                What device do you listen to music on the most?
-                <br />
-                <select name="devices">
-                    <option value="Phone" selected="selected">Phone</option>
-                    <option value="Radio">Radio</option>
-                    <option value="Computer">Computer</option>
+                Course:
+                <select names="course">
+                    <option value="Exploring CS">Exploring CS</option>
+                    <option value="Intro to Java">Intro to Java</option>
+                    <option value="APCS">APCS</option>
+                    <option value="Collaborative Design">Collaborative Design</option>
                 </select>
             </p>
             <p>
-                Upload your song in MP3 format:
-                <br />
-                <input type="file" name="user-song" />
-                <input type="submit" value="upload" />
+                Teacher:
+                <input type="radio" name="teacher" value="Dr. Jadav" />
+                Dr.Jadav
+                <input type="radio" name="teacher" value="Mr. Mannina" />
+                Mr. Mannina
             </p>
             <p>
-                Subscribe to our email list:
-                <br />
-                <input type="email" name="email" />
-                <input type="submit" value="subscribe" />
+                Class Period:
+                <input type="checkbox" name="period" value="1st" />
+                1st
+                <input type="checkbox" name="period" value="2nd" />
+                2nd
+                <input type="checkbox" name="period" value="3rd" />
+                3rd
+                <input type="checkbox" name="period" value="4th" />
+                4th
+                <input type="checkbox" name="period" value="5th" />
+                5th
+                <input type="checkbox" name="period" value="6th" />
+                6th
+                <input type="checkbox" name="period" value="7th" />
+                7th
+                <input type="checkbox" name="period" value="8th" />
+                8th
             </p>
             <p>
-                Last day of classes:
+                What are you most excited about for the new school year?
                 <br />
-                <input type="date" name="Last Day" />
-                <input type="submit" value="submit" />
+                <textarea name="comments" cols="20" rows="4" placeholder="Enter your comments..."> </textarea>
             </p>
         </form>
     </body>
