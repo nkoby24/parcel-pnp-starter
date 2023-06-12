@@ -1,9 +1,13 @@
 body{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
 
+
+
 h1, h2{
-    color:crimson
+    color:crimson;
+    text-align: left;
 }
 
 p{
@@ -12,4 +16,13 @@ p{
 
 .importance{
     color:darkslategray
+}
+
+input.submit{
+    color:blue;
+}
+
+input.submit:hover{
+    background-color:blueviolet;
+    color:white;
 }
