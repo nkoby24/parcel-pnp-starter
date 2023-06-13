@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>CS @ MHS Survey</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <h1>Welcome to Computer Science @MHS</h1>
@@ -9,7 +10,7 @@
         <hr />
         <h2>Demographic Information</h2>
         <form action="mailto:nck2180@gmail.com" method="POST">
-            <p>
+            <p class="Name">
                 First Name:
                 <input type="text" name="firstName" size="15" maxlength="30" required="required" />
 
@@ -17,20 +18,20 @@
                 <input type="text" name="lastName" size="15" maxlength="30" required="required" />
             </p>
 
-            <p>
+            <p class="Name">
                 Username:
                 <input type="text" name="username" size="15" maxlength="30" required="required" />
 
                 Password:
                 <input type="password" name="password" size="15" maxlength="16" required="required" />
             </p>
-            <p>
+            <p class="Name">
                 Date of Birth
                 <input type="date" name="depart" />
             </p>
             <hr />
             <h2>Class Information</h2>
-            <p>
+            <p class="Class">
                 Course:
                 <select names="course">
                     <option value="Exploring CS">Exploring CS</option>
@@ -39,14 +40,14 @@
                     <option value="Collaborative Design">Collaborative Design</option>
                 </select>
             </p>
-            <p>
+            <p class="Class">
                 Teacher:
                 <input type="radio" name="teacher" value="Dr. Jadav" />
                 Dr.Jadav
                 <input type="radio" name="teacher" value="Mr. Mannina" />
                 Mr. Mannina
             </p>
-            <p>
+            <p class="Class">
                 Class Period:
                 <input type="checkbox" name="period" value="1st" />
                 1st
@@ -65,7 +66,7 @@
                 <input type="checkbox" name="period" value="8th" />
                 8th
             </p>
-            <p>
+            <p class="Class">
                 What are you most excited about for the new school year?
                 <br />
                 <textarea name="comments" cols="20" rows="4" placeholder="Enter your comments..."> </textarea>
